@@ -4,8 +4,10 @@ import { AppService } from './app.service';
 import { TypeOrmModule } from '@nestjs/typeorm';
 import { Usuario } from './Usuário/entities/usuario.entity';
 import { UsuarioModule } from './Usuário/usuario.module';
-import { Categoria } from './categoria/entities/categoria.entity';
-import { CategoriaModule } from './categoria/categoria.module';
+import { Categoria } from './Categoria/entities/categoria.entity';
+import { CategoriaModule } from './Categoria/categoria.module';
+import { Produto } from './Produtos/entities/produtos.entity';
+import { ProdutoModule } from './Produtos/produtos.module';
 
 @Module({
   imports: [
@@ -16,12 +18,13 @@ import { CategoriaModule } from './categoria/categoria.module';
       username: 'root',
       password: 'root',
       database: 'db_delivery',
-      entities: [Usuario, Categoria],
+      entities: [Usuario, Categoria, Produto],
       synchronize: true, 
       logging: true,
     }),
     UsuarioModule,
-    CategoriaModule
+    CategoriaModule,
+    ProdutoModule,
   ],
   controllers: [AppController],
   providers: [AppService],
