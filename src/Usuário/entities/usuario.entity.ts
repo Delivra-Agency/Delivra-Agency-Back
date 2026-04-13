@@ -16,7 +16,7 @@ export class Usuario {
     usuario!: string
 
     @IsNotEmpty()
-    @Column({unique: true, length: 100})
+    @Column({length: 100})
     senha!: string
 
     @IsEmail()
@@ -24,6 +24,6 @@ export class Usuario {
     email!: string
 
     @IsNotEmpty()
-    @Column({nullable: false})
+    @Column({nullable: true})
     foto!: string
 }
