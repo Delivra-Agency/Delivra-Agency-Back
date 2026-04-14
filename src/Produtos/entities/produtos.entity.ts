@@ -3,7 +3,7 @@ import { Column, Entity, JoinColumn, ManyToOne, PrimaryGeneratedColumn } from "t
 import { Categoria } from "../../Categoria/entities/categoria.entity";
 import { Usuario } from "../../Usuário/entities/usuario.entity";
 
-@Entity('produtos')
+@Entity('tb_produtos')
 export class Produto{
     @PrimaryGeneratedColumn()
     id!: number;
