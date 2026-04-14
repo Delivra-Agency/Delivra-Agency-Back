@@ -1,7 +1,8 @@
 import { IsNotEmpty, IsNumber, IsOptional, Min } from "class-validator";
 import { Column, Entity, JoinColumn, ManyToOne, PrimaryGeneratedColumn } from "typeorm";
 import { Categoria } from "../../Categoria/entities/categoria.entity";
-import { Usuario } from "../../Usuário/entities/usuario.entity";
+import { Usuario } from "../../usuario/entities/usuario.entity";
+
 
 @Entity('tb_produtos')
 export class Produto{

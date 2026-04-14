@@ -1,6 +1,5 @@
-import { Usuario } from './../entities/usuario.entity';
+import { Usuario } from '../entities/usuario.entity';
 import { Body, Controller, Delete, Get, HttpCode, HttpStatus, Param, ParseIntPipe, Post, Put } from "@nestjs/common";
-import { UsuarioModule } from "../usuario.module";
 import { UsuarioService } from '../service/usuario.service';
 
 @Controller("/usuarios")
