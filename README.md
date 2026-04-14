@@ -1,98 +1,97 @@
+<h1 align="center">🌴 Delivra Agency — Logística & Delivery Inteligente </h1>
+
 <p align="center">
-  <a href="http://nestjs.com/" target="blank"><img src="https://nestjs.com/img/logo-small.svg" width="120" alt="Nest Logo" /></a>
+  O <strong>Delivra Agency</strong> é um ecossistema completo de gestão de logística e delivery, desenvolvido com foco em alta performance, código limpo e uma interface intuitiva e moderna.
 </p>
 
-[circleci-image]: https://img.shields.io/circleci/build/github/nestjs/nest/master?token=abc123def456
-[circleci-url]: https://circleci.com/gh/nestjs/nest
-
-  <p align="center">A progressive <a href="http://nodejs.org" target="_blank">Node.js</a> framework for building efficient and scalable server-side applications.</p>
-    <p align="center">
-<a href="https://www.npmjs.com/~nestjscore" target="_blank"><img src="https://img.shields.io/npm/v/@nestjs/core.svg" alt="NPM Version" /></a>
-<a href="https://www.npmjs.com/~nestjscore" target="_blank"><img src="https://img.shields.io/npm/l/@nestjs/core.svg" alt="Package License" /></a>
-<a href="https://www.npmjs.com/~nestjscore" target="_blank"><img src="https://img.shields.io/npm/dm/@nestjs/common.svg" alt="NPM Downloads" /></a>
-<a href="https://circleci.com/gh/nestjs/nest" target="_blank"><img src="https://img.shields.io/circleci/build/github/nestjs/nest/master" alt="CircleCI" /></a>
-<a href="https://discord.gg/G7Qnnhy" target="_blank"><img src="https://img.shields.io/badge/discord-online-brightgreen.svg" alt="Discord"/></a>
-<a href="https://opencollective.com/nest#backer" target="_blank"><img src="https://opencollective.com/nest/backers/badge.svg" alt="Backers on Open Collective" /></a>
-<a href="https://opencollective.com/nest#sponsor" target="_blank"><img src="https://opencollective.com/nest/sponsors/badge.svg" alt="Sponsors on Open Collective" /></a>
-  <a href="https://paypal.me/kamilmysliwiec" target="_blank"><img src="https://img.shields.io/badge/Donate-PayPal-ff3f59.svg" alt="Donate us"/></a>
-    <a href="https://opencollective.com/nest#sponsor"  target="_blank"><img src="https://img.shields.io/badge/Support%20us-Open%20Collective-41B883.svg" alt="Support us"></a>
-  <a href="https://twitter.com/nestframework" target="_blank"><img src="https://img.shields.io/twitter/follow/nestframework.svg?style=social&label=Follow" alt="Follow us on Twitter"></a>
+<p align="center">
+  Este projeto foi totalmente desenvolvido por:
+  <br>
+  <strong>Eduarda Aleixo,  Gabriel Pereira,  Jean Pedro,  Júlia Santos,  Julio Aguiar,  Wadssa Wacemberg</strong>.
 </p>
-  <!--[![Backers on Open Collective](https://opencollective.com/nest/backers/badge.svg)](https://opencollective.com/nest#backer)
-  [![Sponsors on Open Collective](https://opencollective.com/nest/sponsors/badge.svg)](https://opencollective.com/nest#sponsor)-->
 
-## Description
+<p align="center">
+  <img src="./img/demo-delivra.gif" alt="Demonstração Delivra Agency" width="800px" style="border-radius: 10px; border: 2px solid #22c55e;"/>
+</p>
 
-[Nest](https://github.com/nestjs/nest) framework TypeScript starter repository.
+## 🎯 Objetivo
 
-## Project setup
+O Delivra Agency foi projetado para simular um painel de controle de entregas real. O objetivo foi dominar o ciclo completo de uma aplicação (CRUD) utilizando o ecossistema NestJS, garantindo que a experiência do usuário seja fluida tanto na persistência de dados quanto na navegação visual.
 
-```bash
-$ npm install
-```
+## 🚀 Sobre o Projeto
 
-## Compile and run the project
+Uma aplicação Full Stack moderna que utiliza **React** no front-end e **NestJS** no back-end. Diferente de sistemas comuns, o Delivra foca na agilidade operacional, transformando lógicas complexas de banco de dados em uma interface limpa e "monkey-proof".
 
-```bash
-# development
-$ npm run start
+- 🖥️ **Interface Clean & Tropical:** Design leve com paleta de cores baseada em tons de verde e laranja.
+- ⚡ **Arquitetura NestJS:** Back-end robusto, escalável e totalmente estruturado.
+- 🥗 **Filtro de Saudáveis:** Lógica personalizada para destacar e filtrar itens com foco em bem-estar.
+- 🛠️ **Sincronização em Tempo Real:** Atualização imediata do carrinho e status de disponibilidade dos produtos.
 
-# watch mode
-$ npm run start:dev
+## 🛠️ Tecnologias Utilizadas
 
-# production mode
-$ npm run start:prod
-```
+<p align="left">
+  <img src="https://skillicons.dev/icons?i=react,nestjs,typescript,mysql,js,git" height="40px" />
+</p>
 
-## Run tests
+- **React.js (Vite):** Hooks avançados para gestão de estado e integração com API.
+- **NestJS:** Framework Node.js progressivo para a construção de aplicativos eficientes.
+- **TypeORM:** Mapeamento objeto-relacional para persistência de dados estruturada.
+- **MySQL:** Banco de dados relacional para armazenamento seguro de produtos e usuários.
+- **Axios:** Comunicação assíncrona entre o client e o servidor.
 
-```bash
-# unit tests
-$ npm run test
+## ⚙️ Funcionalidades
 
-# e2e tests
-$ npm run test:e2e
+- **CRUD de Produtos:** Gestão completa de itens, categorias e usuários.
+- **Filtro Dinâmico:** Alternância entre visualização geral e produtos saudáveis (🥗).
+- **Gestão de Carrinho:** Adição e remoção de itens com atualização automática no banco de dados.
+- **Special Price:** Lógica de ordenação para visualização de melhores ofertas.
+- **User Profile Sync:** Identificação de usuário com avatares dinâmicos via API.
 
-# test coverage
-$ npm run test:cov
-```
+## 💡 Diferenciais Técnicos
 
-## Deployment
+- **Clean Code:** Estrutura de pastas organizada seguindo os padrões de módulos e serviços do NestJS.
+- **Segurança e .env:** Configuração dinâmica de variáveis de ambiente para conexão com banco de dados.
+- **Persistência de Estado:** Uso de verbos HTTP corretos (PUT/POST/GET) para garantir a integridade dos dados.
+- **UI/UX Premium:** Layout fluido que se adapta para oferecer a melhor experiência em dashboards.
 
-When you're ready to deploy your NestJS application to production, there are some key steps you can take to ensure it runs as efficiently as possible. Check out the [deployment documentation](https://docs.nestjs.com/deployment) for more information.
+## 🚀 Como Executar
 
-If you are looking for a cloud-based platform to deploy your NestJS application, check out [Mau](https://mau.nestjs.com), our official platform for deploying NestJS applications on AWS. Mau makes deployment straightforward and fast, requiring just a few simple steps:
+````
 
-```bash
-$ npm install -g @nestjs/mau
-$ mau deploy
-```
+Banco de Dados:
+Localize a pasta sql e execute o arquivo script_banco.sql no seu MySQL.
 
-With Mau, you can deploy your application in just a few clicks, allowing you to focus on building features rather than managing infrastructure.
+````
+Back-end (NestJS):
 
-## Resources
+````
+bash
+cd backend
+npm install
+npm run start:dev
 
-Check out a few resources that may come in handy when working with NestJS:
+Front-end (React):
 
-- Visit the [NestJS Documentation](https://docs.nestjs.com) to learn more about the framework.
-- For questions and support, please visit our [Discord channel](https://discord.gg/G7Qnnhy).
-- To dive deeper and get more hands-on experience, check out our official video [courses](https://courses.nestjs.com/).
-- Deploy your application to AWS with the help of [NestJS Mau](https://mau.nestjs.com) in just a few clicks.
-- Visualize your application graph and interact with the NestJS application in real-time using [NestJS Devtools](https://devtools.nestjs.com).
-- Need help with your project (part-time to full-time)? Check out our official [enterprise support](https://enterprise.nestjs.com).
-- To stay in the loop and get updates, follow us on [X](https://x.com/nestframework) and [LinkedIn](https://linkedin.com/company/nestjs).
-- Looking for a job, or have a job to offer? Check out our official [Jobs board](https://jobs.nestjs.com).
+bash
+cd frontend
+npm install
+npm run dev
 
-## Support
+````
 
-Nest is an MIT-licensed open source project. It can grow thanks to the sponsors and support by the amazing backers. If you'd like to join them, please [read more here](https://docs.nestjs.com/support).
+## 📂 Estrutura de Pastas
 
-## Stay in touch
+````
 
-- Author - [Kamil Myśliwiec](https://twitter.com/kammysliwiec)
-- Website - [https://nestjs.com](https://nestjs.com/)
-- Twitter - [@nestframework](https://twitter.com/nestframework)
-
-## License
-
-Nest is [MIT licensed](https://github.com/nestjs/nest/blob/master/LICENSE).
+├── frontend/           # Aplicação React (Vite)
+│   ├── src/
+│   │   ├── assets/     # Logos e imagens
+│   │   ├── App.tsx     # Lógica principal e rotas
+│   │   └── App.css     # Estilização Clean/Tropical
+├── backend/            # API NestJS
+│   ├── src/
+│   │   ├── produtos/   # Módulo de Produtos
+│   │   ├── usuario/    # Módulo de Usuários
+│   │   └── categoria/  # Módulo de Categorias
+│   ├── sql/            # Script de criação/população do banco
+│   └── .env            # Variáveis de ambiente
