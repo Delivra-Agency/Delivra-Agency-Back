@@ -16,7 +16,7 @@ export class CategoriaService {
         return await this.categoriaRepository.findOne({
 
             where: { tipo }
-            
+
         });
     }
 
@@ -35,11 +35,7 @@ export class CategoriaService {
 
     async findAll(): Promise<Categoria[]> {
 
-        return await this.categoriaRepository.find({
-
-            order: { tipo: 'ASC' }
-
-        });
+        return await this.categoriaRepository.find({});
     }
 
     async findById(id: number): Promise<Categoria> {

@@ -1,9 +1,9 @@
 import { HttpException, HttpStatus, Injectable } from '@nestjs/common';
 import { InjectRepository } from '@nestjs/typeorm';
-import { Produto } from '../entities/produtos.entity';
 import { Repository } from 'typeorm';
-import { Categoria } from '../../categoria/entities/categoria.entity';
 import { Usuario } from '../../usuario/entities/usuario.entity';
+import { Categoria } from '../../Categoria/entities/categoria.entity';
+import { Produto } from '../../produtos/entities/produtos.entity';
 
 @Injectable()
 export class ProdutoService {
@@ -161,4 +161,6 @@ export class ProdutoService {
 
     await this.produtoRepository.remove(produto);
   }
+
+    
 }
