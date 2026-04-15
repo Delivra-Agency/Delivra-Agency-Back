@@ -10,8 +10,8 @@ import {
   Put,
   Delete,
 } from '@nestjs/common';
-import { Categoria } from '../entities/categoria.entity';
 import { CategoriaService } from '../service/categoria.service';
+import { Categoria } from '../entities/categoria.entity';
 
 @Controller('/categorias')
 export class CategoriaController {
