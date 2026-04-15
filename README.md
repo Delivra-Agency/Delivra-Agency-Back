@@ -1,97 +1,68 @@
-<h1 align="center">🌴 Delivra Agency — Logística & Delivery Inteligente </h1>
+<h1 align="center">🌴 Delivra Agency — API de Gestão de Delivery e E-commerce</h1>
 
 <p align="center">
-  O <strong>Delivra Agency</strong> é um ecossistema completo de gestão de logística e delivery, desenvolvido com foco em alta performance, código limpo e uma interface intuitiva e moderna.
+  A <strong>Delivra Agency</strong> é uma plataforma de back-end completa para sistemas de delivery, permitindo o gerenciamento dinâmico de produtos, categorias e usuários com alta performance.
 </p>
 
 <p align="center">
-  Este projeto foi totalmente desenvolvido por:
-  <br>
-  <strong>Eduarda Aleixo,  Gabriel Pereira,  Jean Pedro,  Júlia Santos,  Julio Aguiar,  Wadssa Wacemberg</strong>.
-</p>
-
-<p align="center">
-  <img src="./img/demo-delivra.gif" alt="Demonstração Delivra Agency" width="800px" style="border-radius: 10px; border: 2px solid #22c55e;"/>
+  Este projeto foi desenvolvido por: <br>
+  <strong>Eduarda Aleixo, Gabriel Pereira, Jean Pedro, Júlia Santos, Julio Aguiar, Laís Souza e Wadssa Wacemberg.</strong>
 </p>
 
 ## 🎯 Objetivo
 
-O Delivra Agency foi projetado para simular um painel de controle de entregas real. O objetivo foi dominar o ciclo completo de uma aplicação (CRUD) utilizando o ecossistema NestJS, garantindo que a experiência do usuário seja fluida tanto na persistência de dados quanto na navegação visual.
+O objetivo deste projeto é fornecer uma infraestrutura escalável para agências de delivery, facilitando o controle de estoque, segmentação por categorias e uma gestão de usuários segura e eficiente.
 
 ## 🚀 Sobre o Projeto
 
-Uma aplicação Full Stack moderna que utiliza **React** no front-end e **NestJS** no back-end. Diferente de sistemas comuns, o Delivra foca na agilidade operacional, transformando lógicas complexas de banco de dados em uma interface limpa e "monkey-proof".
+A API Delivra Agency foi estruturada para suportar as complexidades de um marketplace. Com um sistema de relacionamentos robusto, ela interliga produtos a categorias e usuários, permitindo uma navegação fluida e filtragens precisas para o consumidor final.
 
-- 🖥️ **Interface Clean & Tropical:** Design leve com paleta de cores baseada em tons de verde e laranja.
-- ⚡ **Arquitetura NestJS:** Back-end robusto, escalável e totalmente estruturado.
-- 🥗 **Filtro de Saudáveis:** Lógica personalizada para destacar e filtrar itens com foco em bem-estar.
-- 🛠️ **Sincronização em Tempo Real:** Atualização imediata do carrinho e status de disponibilidade dos produtos.
+- 🍔 **Gestão de Produtos:** Controle total de itens, preços e disponibilidade.
+- 📂 **Categorização Inteligente:** Organização de produtos por tipo e descrição.
+- 👤 **Área do Usuário:** Cadastro de perfis com segurança de dados.
+- 🔗 **Relacionamentos Complexos:** Uso de `ManyToOne` e `OneToMany` para vincular dados de forma relacional.
 
 ## 🛠️ Tecnologias Utilizadas
 
 <p align="left">
-  <img src="https://skillicons.dev/icons?i=react,nestjs,typescript,mysql,js,git" height="40px" />
+  <img src="https://skillicons.dev/icons?i=nestjs,ts,mysql,nodejs,git" height="40px" />
 </p>
 
-- **React.js (Vite):** Hooks avançados para gestão de estado e integração com API.
-- **NestJS:** Framework Node.js progressivo para a construção de aplicativos eficientes.
-- **TypeORM:** Mapeamento objeto-relacional para persistência de dados estruturada.
-- **MySQL:** Banco de dados relacional para armazenamento seguro de produtos e usuários.
-- **Axios:** Comunicação assíncrona entre o client e o servidor.
+- **NestJS:** Base da aplicação para uma arquitetura limpa e modular.
+- **TypeORM:** Gerenciamento das tabelas e relações entre entidades.
+- **MySQL:** Banco de dados de alto desempenho para armazenamento de dados.
+- **Class-Validator:** Assegura que apenas dados válidos entrem no sistema.
+- **TypeScript:** Facilita a manutenção através da tipagem estática.
 
 ## ⚙️ Funcionalidades
 
-- **CRUD de Produtos:** Gestão completa de itens, categorias e usuários.
-- **Filtro Dinâmico:** Alternância entre visualização geral e produtos saudáveis (🥗).
-- **Gestão de Carrinho:** Adição e remoção de itens com atualização automática no banco de dados.
-- **Special Price:** Lógica de ordenação para visualização de melhores ofertas.
-- **User Profile Sync:** Identificação de usuário com avatares dinâmicos via API.
+- **Controle de Disponibilidade:** Filtros específicos para listar apenas produtos disponíveis e saudáveis.
+- **Segurança de Usuário:** Sistema de atualização de senha e validação de e-mails únicos.
+- **Busca Global:** Endpoints dedicados para busca por nome, tipo, e-mail ou categoria.
+- **Sincronização em Tempo Real:** Banco de dados sincronizado automaticamente com as entidades do código.
 
 ## 💡 Diferenciais Técnicos
 
-- **Clean Code:** Estrutura de pastas organizada seguindo os padrões de módulos e serviços do NestJS.
-- **Segurança e .env:** Configuração dinâmica de variáveis de ambiente para conexão com banco de dados.
-- **Persistência de Estado:** Uso de verbos HTTP corretos (PUT/POST/GET) para garantir a integridade dos dados.
-- **UI/UX Premium:** Layout fluido que se adapta para oferecer a melhor experiência em dashboards.
-
-## 🚀 Como Executar
-
-````
-
-Banco de Dados:
-Localize a pasta sql e execute o arquivo script_banco.sql no seu MySQL.
-
-````
-Back-end (NestJS):
-
-````
-bash
-cd backend
-npm install
-npm run start:dev
-
-Front-end (React):
-
-bash
-cd frontend
-npm install
-npm run dev
-
-````
+- **Validação Cruzada:** O sistema verifica se uma categoria ou usuário existe antes de permitir o cadastro de um novo produto.
+- **Ordenação Automática:** Listagens de produtos e categorias retornam ordenadas alfabeticamente por padrão.
+- **Relacionamentos Eager/Lazy:** Carregamento inteligente de dados relacionados para evitar sobrecarga no banco de dados.
+- **Tratamento de Conflitos:** Lógica de negócio que impede a duplicação de tipos de categoria ou nomes de produtos.
 
 ## 📂 Estrutura de Pastas
 
-````
-
-├── frontend/           # Aplicação React (Vite)
-│   ├── src/
-│   │   ├── assets/     # Logos e imagens
-│   │   ├── App.tsx     # Lógica principal e rotas
-│   │   └── App.css     # Estilização Clean/Tropical
-├── backend/            # API NestJS
-│   ├── src/
-│   │   ├── produtos/   # Módulo de Produtos
-│   │   ├── usuario/    # Módulo de Usuários
-│   │   └── categoria/  # Módulo de Categorias
-│   ├── sql/            # Script de criação/população do banco
-│   └── .env            # Variáveis de ambiente
+```text
+├── src/
+│   ├── categoria/
+│   │   ├── controller/
+│   │   ├── entities/
+│   │   └── service/
+│   ├── produtos/
+│   │   ├── controller/
+│   │   ├── entities/
+│   │   └── service/
+│   ├── usuario/
+│   │   ├── controller/
+│   │   ├── entities/
+│   │   └── service/
+│   ├── app.module.ts
+│   └── main.ts
