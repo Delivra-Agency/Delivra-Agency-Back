@@ -6,7 +6,7 @@
 
 <p align="center">
   Este projeto foi desenvolvido por: <br>
-  <strong>Eduarda Aleixo, Gabriel Pereira, Jean Pedro, Júlia Santos, Julio Aguiar, Laís Souza e Wadssa Wacemberg.</strong>
+  <strong>Eduarda Aleixo, Gabriel Pereira, Jean Pedro, Júlia Santos, Julio Aguiar, Lais Sousa e Wadssa Wacemberg.</strong>
 </p>
 
 ## 🎯 Objetivo
